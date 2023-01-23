@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rouge+Script&display=swap');
 *{
     margin:0px;
     padding:0px;
@@ -18,8 +20,9 @@ header{
     padding: 0px 100px;
 }
 .logo{
-    font-size: 28px;
-    font-weight:bold;
+    font-family: 'Lobster', cursive;
+    font-size: 45px;
+    font-weight:30px;
     color:#fefefe;
 }
 .hamburger{
@@ -27,19 +30,22 @@ header{
 }
 .nav-bar ul{
     display: flex;
+    font-family: 'Rouge Script', cursive;
 }
 .nav-bar ul li a{
     display: block;
     color:#fefefe;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 0px;
     padding: 10px 25px;
-    border-radius: 50px;
+    border-radius: 20px;
     transition: 0.2s;
     margin: 0 5px;
 }
 .nav-bar ul li a:hover{
     color: #11101b;
     background: #fefefe;
+    padding:10px;
 }
 .nav-bar ul li a .active{
     color:#11101b;
