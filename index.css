@@ -8,7 +8,7 @@
     box-sizing:border-box;
 }
 body{
-    background: #fefefe;
+    background: #ffffff;
 }
 header{
     width: 100%;
@@ -49,7 +49,7 @@ header{
 }
 .nav-bar ul li a .active{
     color:#11101b;
-    background: #fefefe;
+    background: #ffffff;
 }
 @media only screen and (max-width: 1320px){
     header{
