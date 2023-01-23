@@ -45,7 +45,7 @@ header{
 .nav-bar ul li a:hover{
     color: #11101b;
     background: #fefefe;
-    padding:10px;
+    padding: 25px;
 }
 .nav-bar ul li a .active{
     color:#11101b;
@@ -84,12 +84,12 @@ header{
         overflow: hidden;
     }
     .nav-bar.active{
-        height:450px;
+        height:400px;
     }
     .nav-bar ul{
         display: block;
         width: fit-content;
-        margin: 80px auto 0px auto;
+        margin: 40px auto 0px auto;
         text-align: center;
         transition: 0.2s;
         opacity:0;
