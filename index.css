@@ -106,6 +106,12 @@ header{
     .nav-bar ul li a{
         margin-bottom: 12px;
     }
+    .moimg img{
+        margin-left: 300px;
+        width:400px;
+        height:300px;
+        z-index: 0;
+    }
 }
 .Intro{
     text-align: center;
