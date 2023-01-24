@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&family=Rouge+Script&family=Tangerine&display=swap');
 *{
     margin:0px;
     padding:0px;
@@ -51,6 +50,11 @@ header{
     color:#11101b;
     background: #ffffff;
 }
+.moimg img{
+    margin-left: 300px;
+    width:500px;
+    height:400px;
+}
 @media only screen and (max-width: 1320px){
     header{
         padding: 0 50px;
@@ -100,4 +104,15 @@ header{
     .nav-bar ul li a{
         margin-bottom: 12px;
     }
+}
+.Intro{
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-size: 45px;
+}
+.more{
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-size: 45px;
+    font-weight:20px;
 }
