@@ -90,7 +90,7 @@ nav ul{
 }
 @media only screen and (max-width: 900px){
     .hamburger{
-        margin-left: 120px;
+        margin-left: 100px;
         display:block;
         cursor: pointer;
     }
