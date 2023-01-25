@@ -56,6 +56,12 @@ header{
     height:400px;
     z-index: 0;
 }
+.imgflex{
+    display:flex;
+}
+.moimg2{
+    margin-top: 100px;;
+}
 @media only screen and (max-width: 1320px){
     header{
         padding: 0 50px;
@@ -106,17 +112,25 @@ header{
     .nav-bar ul li a{
         margin-bottom: 12px;
     }
+    .Intro p{
+        font-size:45px;
+    }
     .moimg img{
         margin-left: 300px;
-        width:400px;
-        height:300px;
+        width:350px;
+        height:250px;
         z-index: 0;
+    }
+    .moimg2 img{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 0px;
     }
 }
 .Intro{
     text-align: center;
     font-family: 'Tangerine', cursive;
-    font-size: 45px;
+    font-size: 70px;
 }
 .more{
     text-align: center;
