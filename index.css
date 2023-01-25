@@ -6,13 +6,21 @@
     text-decoration: none;
     box-sizing:border-box;
 }
+:root{
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+}
+.dark-theme{
+    --primary-color:#000000;
+    --secondary-color:#ffffff;
+}
 body{
-    background: #ffffff;
+    background: var(--primary-color);
 }
 header{
     width: 100%;
     height: 80px;
-    background: #ffffff;
+    background: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,7 +30,7 @@ header{
     font-family: 'Lobster', cursive;
     font-size: 50px;
     font-weight:30px;
-    color:#000000;
+    color:var(--secondary-color);
 }
 .hamburger{
     display: none;
@@ -33,7 +41,7 @@ header{
 }
 .nav-bar ul li a{
     display: block;
-    color:#000000;
+    color:var(--secondary-color);
     font-size: 26px;
     font-weight: 0px;
     padding: 10px 25px;
@@ -42,13 +50,21 @@ header{
     margin: 0 5px;
 }
 .nav-bar ul li a:hover{
-    color: #ffffff;
-    background: #000000;
+    color: var(--primary-color);
+    background: var(--secondary-color);
     padding: 25px;
 }
 .nav-bar ul li a .active{
-    color:#11101b;
-    background: #ffffff;
+    color:var(--secondary-color);
+    background: var(--primary-color);
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+nav ul{
+    flex:1;
+    margin-left: 500px;
 }
 .moimg img{
     margin-left: 300px;
@@ -74,13 +90,14 @@ header{
 }
 @media only screen and (max-width: 900px){
     .hamburger{
+        margin-left: 120px;
         display:block;
         cursor: pointer;
     }
     .hamburger .line{
         width:30px;
         height:3px;
-        background: #000000;
+        background: var(--secondary-color);
         margin:6px 0;
     }
     .nav-bar{
@@ -90,7 +107,7 @@ header{
         left: 0px;
         right: 0px;
         width: 100vw;
-        background: #ffffff;
+        background: var(--primary-color);
         transition: 0.2s;
         overflow: hidden;
     }
@@ -123,7 +140,7 @@ header{
     }
     .moimg2 img{
         width: 150px;
-        height: 150px;
+        height: 130px;
         margin-bottom: 0px;
     }
 }
@@ -131,10 +148,12 @@ header{
     text-align: center;
     font-family: 'Tangerine', cursive;
     font-size: 70px;
+    color:var(--secondary-color)
 }
 .more{
     text-align: center;
     font-family: 'Tangerine', cursive;
     font-size: 45px;
     font-weight:20px;
+    color:var(--secondary-color)
 }
