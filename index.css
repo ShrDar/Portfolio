@@ -130,7 +130,10 @@ nav ul{
         margin-bottom: 12px;
     }
     .Intro p{
-        font-size:45px;
+        font-size:65px;
+    }
+    .more p{
+        font-size:40px;
     }
     .moimg img{
         margin-left: 300px;
