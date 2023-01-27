@@ -112,7 +112,7 @@ nav ul{
         overflow: hidden;
     }
     .nav-bar.active{
-        height:400px;
+        height:600px;
         z-index: 10;
     }
     .nav-bar ul{
