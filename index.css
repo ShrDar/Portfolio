@@ -130,10 +130,10 @@ nav ul{
         margin-bottom: 12px;
     }
     .Intro p{
-        font-size:65px;
+        font-size:55px;
     }
     .more p{
-        font-size:40px;
+        font-size:35px;
     }
     .moimg img{
         margin-left: 300px;
@@ -145,6 +145,9 @@ nav ul{
         width: 150px;
         height: 130px;
         margin-bottom: 0px;
+    }
+    .footer-container footer .social_icon li a{
+        margin: 0px 30px;
     }
 }
 .Intro{
@@ -160,3 +163,40 @@ nav ul{
     font-weight:20px;
     color:var(--secondary-color)
 }
+.footer-container{
+    background: var(--primary-color);
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    min-height: 130px;
+}
+footer{
+    margin-top: 30px;;
+    position: relative;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .social_icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+footer .social_icon li{
+    list-style: none;
+}
+footer .social_icon li a{
+    font-size: 2em;
+    color: var(--secondary-color);
+    margin: 0 80px;
+    display: inline-block;
+    transition: 0.3s;
+}
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+}
+
