@@ -10,10 +10,14 @@ function validation(){
     return false;
     }
     else if(password.length<5){
-        alert("Passsword too short!!")
+        alert("Min. length 5 words");
         return false;
     }
+    else if(username="Darshan" && password=="12345"){
+        alert("Log in Successful");
+    }
     else{
-        alert("Log in Successful")
+        alert("Incorrect E-mail or Password")
+        return false;
     }
 }
