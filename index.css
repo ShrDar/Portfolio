@@ -112,13 +112,13 @@ nav ul{
         overflow: hidden;
     }
     .nav-bar.active{
-        height:600px;
+        height:800px;
         z-index: 10;
     }
     .nav-bar ul{
         display: block;
         width: fit-content;
-        margin: 40px auto 0px auto;
+        margin: 100px auto 0px auto;
         text-align: center;
         transition: 0.2s;
         opacity:0;
