@@ -1,203 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&family=Rouge+Script&family=Tangerine&display=swap');
 *{
-    margin:0px;
-    padding:0px;
-    list-style: none;
-    text-decoration: none;
-    box-sizing:border-box;
-}
-:root{
-    --primary-color: #ffffff;
-    --secondary-color: #000000;
-}
-.dark-theme{
-    --primary-color:#000000;
-    --secondary-color:#ffffff;
+    font-family: 'Tangerine', cursive;;
 }
 body{
-    background: var(--primary-color);
+    margin: 0px;
+    padding: 0px;
 }
-header{
-    width: 100%;
-    height: 80px;
-    background: var(--primary-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 100px;
-}
-.logo{
-    font-family: 'Lobster', cursive;
-    font-size: 50px;
-    font-weight:30px;
-    color:var(--secondary-color);
-}
-.hamburger{
-    display: none;
-}
-.nav-bar ul{
-    display: flex;
-    font-family: 'Rouge Script', cursive;
-}
-.nav-bar ul li a{
-    display: block;
-    color:var(--secondary-color);
-    font-size: 26px;
-    font-weight: 0px;
-    padding: 10px 25px;
-    border-radius: 20px;
-    transition: 0.2s;
-    margin: 0 5px;
-}
-.nav-bar ul li a:hover{
-    color: var(--primary-color);
-    background: var(--secondary-color);
-    padding: 25px;
-}
-.nav-bar ul li a .active{
-    color:var(--secondary-color);
-    background: var(--primary-color);
-}
-#icon{
-    width: 30px;
-    cursor: pointer;
-}
-nav ul{
-    flex:1;
-    margin-left: 500px;
-}
-.moimg img{
-    margin-left: 300px;
-    width:500px;
-    height:400px;
-    z-index: 0;
-}
-.imgflex{
-    display:flex;
-}
-.moimg2{
-    margin-top: 100px;;
-}
-@media only screen and (max-width: 1320px){
-    header{
-        padding: 0 50px;
-    }
-}
-@media only screen and (max-width: 1100px){
-    header{
-        padding: 0 30px;
-    }
-}
-@media only screen and (max-width: 900px){
-    .hamburger{
-        margin-left: 100px;
-        display:block;
-        cursor: pointer;
-    }
-    .hamburger .line{
-        width:30px;
-        height:3px;
-        background: var(--secondary-color);
-        margin:6px 0;
-    }
-    .nav-bar{
-        height: 0px;
-        position: absolute;
-        top: 80px;
-        left: 0px;
-        right: 0px;
-        width: 100vw;
-        background: var(--primary-color);
-        transition: 0.2s;
-        overflow: hidden;
-    }
-    .nav-bar.active{
-        height:800px;
-        z-index: 10;
-    }
-    .nav-bar ul{
-        display: block;
-        width: fit-content;
-        margin: 100px auto 0px auto;
-        text-align: center;
-        transition: 0.2s;
-        opacity:0;
-    }
-    .nav-bar.active ul{
-        opacity:1;
-    }
-    .nav-bar ul li a{
-        margin-bottom: 12px;
-    }
-    .Intro p{
-        margin-top:60px;
-        font-size:55px;
-    }
-    .more p{
-        font-size:35px;
-    }
-    .moimg img{
-        margin-left: 300px;
-        width:350px;
-        height:250px;
-        z-index: 0;
-    }
-    .moimg2 img{
-        width: 150px;
-        height: 130px;
-        margin-bottom: 0px;
-    }
-    .footer-container footer .social_icon li a{
-        margin: 0px 30px;
-    }
-}
-.Intro{
-    text-align: center;
-    font-family: 'Tangerine', cursive;
-    font-size: 70px;
-    color:var(--secondary-color)
-}
-.more{
-    text-align: center;
-    font-family: 'Tangerine', cursive;
-    font-size: 45px;
-    font-weight:20px;
-    color:var(--secondary-color)
-}
-.footer-container{
-    background: var(--primary-color);
+body:before{
+    content: '';
     position: fixed;
-    bottom:0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://media.istockphoto.com/id/1280466980/photo/white-grey-marble-texture-background-in-natural-pattern-with-high-resolution-tiles-luxury.jpg?s=170667a&w=0&k=20&c=TNsgaiTRVWR4eQyO2BHCM1meQavJR6AWE6rjNjwUHi0=);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+}
+.contact-form{
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    padding: 80px 40px;
+    background: rgba(0,0,0,0.6);
+}
+.avatar{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    top: 0px;
+    left: calc(50% - 40px);
+}
+.contact-form h2{
+    margin: 0;
+    padding: 0 0 20px;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    color:#fff;
+}
+.contact-form p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+    font-weight: thin;
+    color: #fff;
+}
+.contact-form input{
     width: 100%;
-    min-height: 130px;
+    margin-bottom: 20px;
 }
-footer{
-    margin-top: 30px;;
-    position: relative;
+.contact-form input[type=email],
+.contact-form input[type=password]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    font-size: 25px;
+}
+.contact-form button[type=submit]{
+    height: 30px;
     width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    color: #fff;
+    font-size: 25px;
+    background: #000;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-top: 15%;
 }
-footer .social_icon{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-}
-footer .social_icon li{
-    list-style: none;
-}
-footer .social_icon li a{
-    font-size: 2em;
-    color: var(--secondary-color);
-    margin: 0 80px;
-    display: inline-block;
+.contact-form button[type=submit]:hover{
+    background: #fff;
+    color:#000;
     transition: 0.3s;
+    font-weight: bold;
 }
-footer .social_icon li a:hover{
-    transform: translateY(-10px);
-}
-
