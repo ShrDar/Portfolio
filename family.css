@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Kaushan+Script&family=Lobster&family=Rouge+Script&family=Tangerine&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 1.25rem;
+    line-height: 1.6rem;
+    background-color: #f3cfe1;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+header .heading{
+    padding-top: 50px;
+    font-family: 'Rouge Script', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.person{
+    padding-top: 14.5rem;
+    position: relative;
+    max-width: 13rem;
+    margin-inline: auto;
+    transition: 0.5s;
+}
+.person_container{
+    aspect-ratio: 1/1.15;
+    display: grid;
+    align-items: end;
+    border-radius: 0 0 100vw 100vw;
+    overflow: hidden;
+    transition: transform 200ms ease-in-out;
+    position: relative;
+}
+.person_container:hover{
+    transform: scale(1.05);
+}
+.person_circle{
+    position: absolute;
+    inset: auto 0 0;
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 50%;
+    margin-inline: auto;
+}
+.person_img{
+    position: relative;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 2;
+    transform: scale(1.6);
+    transition: 250ms;
+}
+.person_container:hover .person_img{
+    transform: scale(1.9) translateY(-1.02rem);
+} 
+.main-container{
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+}
+.name{
+    font-family: 'Rouge Script', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+@media only screen and (max-width: 900px){
+    body{
+        height: auto;
+    }
+    .person{
+        padding-top: 5rem;
+        max-width: 10rem;
+        margin-bottom: 0px;
+    }
+    .main-container{
+        flex-direction: column;
+    }
+}
