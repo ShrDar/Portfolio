@@ -13,7 +13,7 @@ function validation(){
         alert("Min. length 5 words");
         return false;
     }
-    else if(username="Darshan" && password=="12345"){
+    else if(username=="Darshan" && password=="12345"){
         alert("Log in Successful");
     }
     else{
