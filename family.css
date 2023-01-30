@@ -20,7 +20,7 @@ header .heading{
     text-align: center;
 }
 .person{
-    padding-top: 14.5rem;
+    padding-top: 13rem;
     position: relative;
     max-width: 13rem;
     margin-inline: auto;
@@ -63,12 +63,125 @@ header .heading{
     align-items: center;
     transition: 0.4s;
 }
+/*For Dad's Info*/
 .name{
-    font-family: 'Rouge Script', cursive;
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 20px;
+    margin-right: 10px;
+    width: auto;
     text-align: center;
+}
+.name li{
+    list-style: none;
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+}
+.name li label[for="first"]{
+    cursor: pointer;
+}
+input[type="checkbox"][id="first"]{
+    display: none;
+}
+.name .content{
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.name input[type="checkbox"][id="first"]:checked + label[for="first"] + .content{
+    max-height:100px;
+}
+.name input[type="checkbox"][id="first"]:not(:checked) + label[for="first"] + .content{
+    max-height:0;
+}
+/*For Mom's Info*/
+.name1{
+    margin-right: 10px;
+    width: auto;
+    text-align: center;
+}
+.name1 li{
+    list-style: none;
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+}
+.name1 li label[for="second"]{
+    cursor: pointer;
+}
+input[type="checkbox"][id="second"] {
+    display: none;
+}
+.name1 .content1{
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.name1 input[type="checkbox"][id="second"]:checked + label[for="second"] + .content1{
+    max-height:100px;
+}
+.name1 input[type="checkbox"][id="second"]:not(:checked) + label[for="second"] + .content1{
+    max-height:0;
+}
+/*For Sister's Info*/
+.name2{
+    margin-right: 10px;
+    width: auto;
+    text-align: center;
+}
+.name2 li{
+    list-style: none;
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+}
+.name2 li label[for="third"]{
+    cursor: pointer;
+}
+input[type="checkbox"][id="third"] {
+    display: none;
+}
+.name2 .content2{
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.name2 input[type="checkbox"][id="third"]:checked + label[for="third"] + .content2{
+    max-height:100px;
+}
+.name2 input[type="checkbox"][id="third"]:not(:checked) + label[for="third"] + .content2{
+    max-height:0;
+}
+/*For My Info*/
+.name3{
+    margin-right: 10px;
+    width: auto;
+    text-align: center;
+}
+.name3 li{
+    list-style: none;
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+}
+.name3 li label[for="fourth"]{
+    cursor: pointer;
+}
+input[type="checkbox"][id="fourth"] {
+    display: none;
+}
+.name3 .content3{
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.name3 input[type="checkbox"][id="fourth"]:checked + label[for="fourth"] + .content3{
+    max-height:100px;
+}
+.name3 input[type="checkbox"][id="fourth"]:not(:checked) + label[for="fourth"] + .content3{
+    max-height:0;
 }
 @media only screen and (max-width: 900px){
     body{
