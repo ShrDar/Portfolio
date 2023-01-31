@@ -6,7 +6,7 @@
 body{
     font-size: 1.25rem;
     line-height: 1.6rem;
-    background-color: #f3cfe1;
+    background: #FAC0BF;
 }
 img{
     max-width: 100%;
@@ -82,6 +82,7 @@ header .heading{
     font-size: 40px;
     font-weight: bold;
     padding-top: 10px;
+    transition: 0.4s;
 }
 input[type="checkbox"][id="first"]{
     display: none;
@@ -120,6 +121,7 @@ input[type="checkbox"][id="first"]{
     font-size: 40px;
     font-weight: bold;
     padding-top: 10px;
+    transition: 0.4s;
 }
 input[type="checkbox"][id="second"] {
     display: none;
@@ -158,6 +160,7 @@ input[type="checkbox"][id="second"] {
     font-size: 40px;
     font-weight: bold;
     padding-top: 10px;
+    transition: 0.4s;
 }
 input[type="checkbox"][id="third"] {
     display: none;
@@ -196,6 +199,7 @@ input[type="checkbox"][id="third"] {
     font-size: 40px;
     font-weight: bold;
     padding-top: 10px;
+    transition: 0.4s;
 }
 input[type="checkbox"][id="fourth"] {
     display: none;
@@ -214,6 +218,22 @@ input[type="checkbox"][id="fourth"] {
 }
 .name3 input[type="checkbox"][id="fourth"]:not(:checked) + label[for="fourth"] + .content3{
     max-height:0;
+}
+.name li label[for="first"]:hover{
+    transition: 0.4s;
+    font-size: 45px;
+}
+.name1 li label[for="second"]:hover{
+    transition: 0.4s;
+    font-size: 45px;
+}
+.name2 li label[for="third"]:hover{
+    transition: 0.4s;
+    font-size: 45px;
+}
+.name3 li label[for="fourth"]:hover{
+    transition: 0.4s;
+    font-size: 45px;
 }
 @media only screen and (max-width: 900px){
     body{
