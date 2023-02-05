@@ -18,6 +18,12 @@ header .heading{
     font-size: 40px;
     font-weight: bold;
     text-align: center;
+    transition: 0.5s;
+}
+.heading:hover{
+    cursor: pointer;
+    font-size: 60px;
+    transition: 0.5s;
 }
 .person{
     padding-top: 10rem;
