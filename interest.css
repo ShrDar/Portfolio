@@ -8,15 +8,13 @@ body{
     display: flex;
     justify-content: center;
     align-self: center;
-    min-height: 100vh;
-    background: #222;
+    height: auto;
+    background: #000000;
 }
 .container{
     font-family: 'Kaushan Script', cursive;
     position: relative;
-    background: #ffffff;
-    border: 2px solid #fff;
-    width:1000px;
+    width:800px;
     display: grid;
     grid-template-columns: repeat(auto-fill, min-max(400px, 1fr));
     grid-template-rows: minmax(100px, auto);
@@ -35,6 +33,9 @@ body{
     color: #fff;
     transition: 0.4s;
 }
+.box .hidden{
+    color:#333;
+}
 .container .box:hover{
     background: #ffffff;
     color: #000;
@@ -48,7 +49,7 @@ body{
     font-size: 40px;
 }
 .container .box:nth-child(1){
-    grid-column: span 2;
+    grid-column: span 3;
     grid-row: span 2;
 }
 .container .box:nth-child(2){
@@ -71,6 +72,7 @@ body{
     .container{
         grid-template-columns: repeat(auto-fill, min-max(50%, 1fr));
         grid-template-rows: minmax(auto, auto);
+        transition: 0.5s;
     }
     .container .box{
         grid-column: unset !important;
