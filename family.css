@@ -4,9 +4,10 @@
     padding: 0;
 }
 body{
+    height: 100vh;
     font-size: 1.25rem;
     line-height: 1.6rem;
-    background: #FAC0BF;
+    background: radial-gradient(circle at 32.2% 83.5%, rgb(239, 167, 167) 0%, rgb(215, 123, 191) 90%);
 }
 img{
     max-width: 100%;
