@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Kaushan+Script&family=Lobster&family=Roboto:wght@100&family=Rouge+Script&family=Tangerine&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right, #fffbd5, #b20a2c);
+}
+.heading{
+    padding: 40px;
+    text-align: center;
+    font-family: 'Lobster';
+    color: #000000;
+}
+.container{
+    font-family: 'Kaushan Script', cursive;;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .content{
+    overflow: hidden;
+    height: fit-content;
+    width:fit-content;
+    margin-bottom: 10px;
+    padding: 20px;
+    background: inherit;
+    color: #000000;
+    position: relative;
+    transition: 0.5s;
+}
+.container .content a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.container .content a:hover{
+    color: #000000;
+    font-size:20px;
+    transition: 0.5s;
+}
+.container .content iframe{
+    border-radius: 20px ;
+}
