@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cv{
+    margin-top: 80px;
+    height: fit-content;
+    width: fit-content;
+}
+.cv img{
+    height:500px;
+    width: 400px;
+    border: 1px solid #000;
+}
+.container button[type=submit]{
+    height: 40px;
+    width: 100px;
+    background: #FFC300;
+    color: 000;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+.container button:hover{
+    color:#fff;
+    background: #000;
+    transition: 0.3s;
+}

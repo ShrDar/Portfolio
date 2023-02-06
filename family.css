@@ -12,7 +12,12 @@ img{
     max-width: 100%;
     display: block;
 }
+header{
+    display: flex;
+    justify-content: center;
+}
 header .heading{
+
     padding-top: 50px;
     font-family: 'Rouge Script', cursive;
     font-size: 40px;
