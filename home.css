@@ -169,9 +169,11 @@ nav ul{
     position: fixed;
     bottom:0;
     width: 100%;
-    min-height: 130px;
+    height: fit-content;
+    padding: 20px;
 }
 footer{
+    height: fit-content;
     margin-top: 30px;;
     position: relative;
     width:100%;
@@ -186,7 +188,6 @@ footer .social_icon{
     justify-content: center;
     align-items: center;
     margin: 10px 0;
-    z-index: -99;
 }
 footer .social_icon li{
     list-style: none;
