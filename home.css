@@ -186,6 +186,7 @@ footer .social_icon{
     justify-content: center;
     align-items: center;
     margin: 10px 0;
+    z-index: -99;
 }
 footer .social_icon li{
     list-style: none;
