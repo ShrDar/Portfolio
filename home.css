@@ -15,6 +15,7 @@
     --secondary-color:#ffffff;
 }
 body{
+    width:100%;
     background: var(--primary-color);
 }
 header{
@@ -170,7 +171,7 @@ nav ul{
     bottom:0;
     width: 100%;
     height: fit-content;
-    padding: 20px;
+    padding-bottom: 30px;
 }
 footer{
     height: fit-content;
