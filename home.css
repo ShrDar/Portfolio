@@ -15,7 +15,7 @@
     --secondary-color:#ffffff;
 }
 body{
-    width:100%;
+    max-width:100%;
     background: var(--primary-color);
 }
 header{
@@ -69,15 +69,17 @@ nav ul{
 }
 .moimg img{
     margin-left: 300px;
-    width:500px;
-    height:400px;
+    width:450px;
+    height:350px;
     z-index: 0;
 }
 .imgflex{
     display:flex;
 }
 .moimg2{
-    margin-top: 100px;;
+    margin-top: 90px;
+    height: 180px;
+    width: 180px;
 }
 @media only screen and (max-width: 1320px){
     header{
