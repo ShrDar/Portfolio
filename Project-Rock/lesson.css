@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Kaushan+Script&family=Lobster&family=Nunito&family=Quicksand:wght@300&family=Roboto:wght@100&family=Rouge+Script&family=Sulphur+Point:wght@300&family=Tangerine&display=swap');
+*{
+    margin: 0px;
+    padding: 10px;
+    /*border: 1px solid red;*/
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fae6e0;
+}
+.title{
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 10px;
+}
+.container{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+.movecon{
+    display: flex;
+    width: fit-content;
+    /* border-bottom: 1px solid #000;
+    border-top: 1px solid #000; */
+    border-radius: 6px;
+}
+.btn{
+    background: inherit;
+    border: none;
+    height:fit-content;
+    width: fit-content;
+    border-radius: 70px;
+    margin: 20px;
+}
+.rock{
+    height:100px;
+    transition: 0.2s
+}
+.rock:hover{
+    filter: invert(1);
+    transition: 0.2s;
+}
+.paper{
+    height: 100px;
+    transition: 0.2s;
+}
+.paper:hover{
+    filter: invert(1);
+    transition: 0.2s;
+}
+.scissors{
+    height: 100px;
+    transition: 0.2s;
+}
+.scissors:hover{
+    filter: invert(1);
+    transition: 0.2s;
+}
+.rbtn{
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 20px;
+    width: 80px;
+    background: #b1aeae;
+    color: #000000;
+    border: none;
+    border-radius: 30px;
+    transition: 0.2s;
+    margin: 20px;
+}
+.rbtn:hover{
+    background: #000;
+    color: #ffffff;
+    transition: 0.2s;
+}
+.loss{
+    height: 50px;
+    width: 50px;
+}
+.status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score{
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+.details{
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.mimg{
+    display: flex;
+    align-items: center;
+}
+.moveimg{
+    display: flex;
+    height: 40px;
+    width: 40px;
+}
+.details1{
+    display: flex;
+    flex-direction: column;
+}
+.uncmove{
+    display: flex;
+}
+.rnabtn{
+    display: flex;
+    align-items: center;
+}
+.abtn{
+    height: 45px;
+    width: 110px;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 20px;
+    background: #b4d3ff;
+    border: none;
+    align-items: center;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+.abtn:hover{
+    background: #000;
+    color: #ffffff;
+    transition: 0.2s;
+}
+

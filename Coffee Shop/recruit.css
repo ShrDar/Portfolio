@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Kaushan+Script&family=Lobster&family=Quicksand:wght@300&family=Roboto:wght@100&family=Rouge+Script&family=Tangerine&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f4dfc8;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.heading{
+    padding-top: 40px;
+    font-family: 'Kaushan Script', cursive;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 50px;
+    padding: 20px;
+    width: fit-content;
+    font-family: 'Quicksand';
+    font-weight: bold;
+}
+.name{
+    padding: 20px;
+}
+.name input[type=text]{
+    background: #f4dfc8;
+    border: 0.4px solid #000;
+}
+.address{
+    padding: 20px;
+}
+.address input[type=text]{
+    background: #f4dfc8;
+    border: 0.4px solid #000;
+}
+.phno{
+    padding: 20px;
+}
+.phno input[type=text]{
+    background: #f4dfc8;
+    border: 0.4px solid #000;
+}
+.motive{
+    padding: 20px;
+}
+.motive input[type=text],textarea{
+    height: 70px;
+    width: 200px;
+    font-weight: bold;
+    font-family: 'Quicksand';
+    background: #f4dfc8;
+    border-radius: 10px;
+    text-align: center;
+}
+.submission input[type=reset]{
+    font-family: 'Quicksand';
+    font-weight: bold;
+    border: none;
+    background: #FFC60E;
+    color: #000;
+    border-radius: 20px;
+    height: 20px;
+    width: 45px;
+    transition: 0.2s;
+}
+.submission input[type=submit]{
+    font-family: 'Quicksand';
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    height: 23px;
+    width: 48px;
+    transition: 0.2s;
+}
+.submission input[type=reset]:hover{
+    background: #713C32;
+    color: #fff;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.submission input[type=submit]:hover{
+    background: #713C32;
+    color: #fff;
+    transition: 0.2s;
+    cursor: pointer;
+}

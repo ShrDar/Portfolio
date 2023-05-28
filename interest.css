@@ -10,7 +10,7 @@ body{
     align-self: center;
     height: auto;
     background-color: #FAACA8;
-background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
 
 }
 .container{

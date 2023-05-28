@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Kaushan+Script&family=Lobster&family=Quicksand:wght@300&family=Roboto:wght@100&family=Rouge+Script&family=Tangerine&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f4dfc8;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.shopname{
+    display: flex;
+    margin-left: 20px;
+    padding-inline: 10px;
+    font-size: 20px;
+    font-family: 'Kaushan Script', cursive;
+}
+.shopname img{
+    width: 48px;
+    height: 48px;
+    padding-left: 10px;
+    filter: brightness(2);
+}
+.nav-bar{
+    display: flex;
+    font-family: 'Rouge Script', cursive;
+    width: fit-content;
+    padding: 12px;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+}
+.nav-bar ul li a{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px 30px;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.2s;
+    text-align: center;
+    position: relative;
+}
+.nav-bar ul li a:hover{
+    color: #f4dfc8;
+    background: #000000;
+    border-radius: 20px;
+    transition: 0.2s;
+    padding: 30px;
+}
+.info{
+    padding: 50px;
+    font-size: 100px;
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+}
+.coffees{
+    display: flex;
+    justify-content: center;
+}
+.espresso{
+    text-align: center;
+    padding: 30px;
+}
+.espresso img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.cappuccino{
+    text-align: center;
+    padding: 30px;
+}
+.cappuccino img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.americano{
+    text-align: center;
+    padding: 30px;
+}
+.americano img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.mocha{
+    padding: 30px;
+    text-align: center;
+}
+.mocha img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    filter: invert(0.1);
+}
+.cname{
+    font-size: 35px;
+    font-family: 'Tangerine', cursive;
+}
+.price{
+    font-family: 'Tangerine', cursive;
+    font-size: 25px;
+    transition: 0.2s;
+}
+.price:hover{
+    font-size: 35px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.coffees .buy button{
+    width: 70px;
+    height: 30px;
+    margin: 20px;
+    border: none;
+    outline: none;
+    background: #FFC60E;
+    font-size: 25px;
+    font-family: 'Tangerine', cursive;
+    font-weight: light;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+.coffees .buy button:hover{
+    background: #713C32;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+

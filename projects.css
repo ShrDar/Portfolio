@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Kaushan+Script&family=Lobster&family=Nunito&family=Quicksand:wght@300&family=Roboto:wght@100&family=Rouge+Script&family=Sulphur+Point:wght@300&family=Tangerine&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Sulphur Point', 'sans-serif';
+}
+.heading{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+.prow1{
+    display: flex;
+}
+.prow2{
+    display: flex;
+}
+.project{
+    margin: 30px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.project img{
+    border-bottom: 1px solid #000;
+}
+.project button{
+    border: none;
+    font-family: 'Sulphur Point', 'sans-serif';
+    font-size: 16px;
+    background: #FFCF7B;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+.project button:hover{
+    background: #C8CDE1;
+    transition: 0.2s;
+}
+.pro_picture1{
+    height: 180px;
+    width: 280px;
+}
+.pro_picture2{
+    height: 180px;
+    width: 330px;
+}
+.pro_picture3{
+    height: 230px;
+    width: 390px;
+    filter: invert(0.1);
+}
+.pro_picture4{
+    height: 240px;
+    width: 230px;
+}

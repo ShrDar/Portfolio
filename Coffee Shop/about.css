@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Kaushan+Script&family=Lobster&family=Quicksand:wght@300&family=Roboto:wght@100&family=Rouge+Script&family=Sacramento&family=Tangerine&display=swap');*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: #f4dfc8;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.shopname{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+}
+.shopname img{
+    height: 80px;
+    width: 80px;
+    padding-left: 10px;
+    filter: brightness(2);
+}
+.info{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Sacramento', cursive;
+}
+.founders{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.founders img{
+    height:150px;
+    width:150px;
+}
+.name{
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 28px;
+    font-weight: lighter;
+}
+.intro{
+    padding: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Sacramento', cursive;
+}

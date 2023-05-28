@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Kaushan+Script&family=Lobster&family=Quicksand:wght@300&family=Roboto:wght@100&family=Rouge+Script&family=Tangerine&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f4dfc8;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Tangerine', cursive;
+}
+.info img{
+    height: 50px;
+    width: 50px;
+}
+.methods{
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+    text-align: center;
+    font-family: 'Rouge Script', cursive;
+}
+.phone{
+    background: #D6D8FF;
+    height: fit-content;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 50px;
+    margin-top: 75px;
+    margin-right: 200px;
+    border: 1px solid #000;
+    
+}
+.phone img{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+}
+.mail{
+    background: #FFCC81;
+    padding: 50px;
+    font-size: 25px;
+    height: fit-content;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-top: 75px;
+    margin-right: 100px;
+}
+.mail img{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+}
+.map{
+    font-size: 25px;
+    padding: 30px;
+    height: fit-content;
+    border-radius: 20px;
+    margin-right: -70px;
+}
+.map iframe{
+    width: 300px;
+    height: 270px;
+    padding: 10px;
+    filter: invert(0.1);
+    border-radius: 20px;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-size: 30px;
+}
+.socials img{
+    height: 30px;
+    width: 30px;
+    margin: 30px;
+    transition: 0.2s;
+}
+.socials img:hover{
+    transform: translateY(-5px);
+    transition: 0.2s;
+}
