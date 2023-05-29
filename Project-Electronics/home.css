@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Kaushan+Script&family=Lobster&family=Quicksand:wght@300&family=Roboto:wght@100&family=Rouge+Script&family=Tangerine&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /*background: linear-gradient(to right,#e7e4e2,#ffd1b8);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+.header{
+    width: 100%;
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+    justify-content: space-between;
+}
+.logo{
+    width: 100%;
+    padding-left: 20px;
+}
+.logo img{
+    height: 80px;
+    width: 160px;
+}
+.nav-bar{
+    padding: 10px;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+}
+.nav-bar ul li a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 20px;
+    transition: 0.2s;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.nav-bar ul li a:hover {
+    color: #fff;
+    transition: 0.2s;
+    
+    font-weight: bolder;
+}
+#home:hover{
+    background: #3366FF;
+}
+#appliances:hover{
+    background: #FF9900;
+    color: #000000;
+}
+#contact:hover{
+    background: #FF0000;
+}
+#gallery:hover{
+    background: #993300;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 100px;
+}
+.title{
+    text-align: center;
+    width: fit-content;
+    font-size: 30px;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #000;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.electronic{
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    
+}
+.irow1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.irow2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.items2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.items button{
+    margin: 10px;
+    height: 30px;
+    width: 140px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Quicksand', 'sans-serif';
+    border: none;
+    border-radius: 20px;
+    background: rgb(104, 103, 103);
+    color: #fff;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.items button:hover{
+    background: #3366FF;
+    color: #fff;
+    transition: 0.2s;
+}
+.brands{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #000;
+}
+.brandtitle{
+    font-size: 30px;
+    font-family: 'Quicksand', 'sans-serif';
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+.brands img{
+    padding: 50px;
+    transition: 0.2s;
+}
+.brands img:hover{
+    filter: opacity(0.5);
+    transition: 0.3s;
+}
+.brandrow1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brandrow2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brandlogo1{
+    height: 100px;
+    width: 265px;
+    transition: 0.3s;
+}
+.brandlogo2{
+    height: 125px;
+    width: 205px;
+}
+.brandlogo3{
+    height: 125px;
+    width: 205px;
+}
+.brandlogo4{
+    height: 125px;
+    width: 205px;
+}
+.brandlogo5{
+    height: 145px;
+    width: 165px;
+}
+@media only screen and (max-width: 1000px){
+    .brandrow1{
+        display: flex;
+        flex-direction: column;
+    }
+    .brandrow2{
+        flex-direction: column;
+    }
+    .irow1{
+        flex-direction: column;
+    }
+    .irow2{
+        flex-direction: column;
+    }
+    .nav-bar{
+        display: none;
+    }
+}
