@@ -10,15 +10,25 @@
 <body>
     <div class="container">
         <p class="title">Select Your Move</p>
+        <p class="instruction">Press R, P or S on Keyboard</p>
         <div class="movecon">
-            <button class='btn' onclick="compmove('rock')"><img class='rock' src="punch.png"></button>
-            <button class='btn' onclick="compmove('paper')"><img class='paper' src="paper.png"></button>
-            <button class='btn' onclick="compmove('scissors')"><img class='scissors' src="scissors.png"></button>
+            <div class="rpswrap">
+                <button class='btn-rock btn'><img class='rock' src="punch.png"></button>
+                <p class="keys">R</p>
+            </div>
+            <div class="rpswrap">
+                <button class='btn-paper btn'><img class='paper' src="paper.png"></button>
+                <p class="keys">P</p>
+            </div>
+            <div class="rpswrap">
+                <button class='btn-scissors btn'><img class='scissors' src="scissors.png"></button>
+                <p class="keys">S</p>
+            </div>
         </div>
         <div class="rnabtn">
-            <button class="rbtn" onclick="reset()">Reset</button>
+            <button class="rbtn">Reset</button>
             <div class="abtn1">
-                <button class="abtn" onclick="abtn()">Auto-Play</button>
+                <button class="abtn">Auto-Play</button>
             </div>
         </div>
         <div class="details">

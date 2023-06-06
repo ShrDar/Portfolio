@@ -140,4 +140,40 @@ function abtn(){
         autoplay=false;
     }
 }
+
+document.querySelector('.btn-rock')
+.addEventListener('click',() => {
+    compmove('rock');
+});
+document.querySelector('.btn-paper')
+.addEventListener('click',() => {
+    compmove('paper');
+});
+document.querySelector('.btn-scissors')
+.addEventListener('click',() => {
+    compmove('scissors');
+});
+
+document.querySelector('.rbtn').addEventListener('click', () => {
+    reset();
+})
+document.querySelector('.abtn').addEventListener('click', () =>{
+    abtn();
+})
+
+document.body.addEventListener('keydown', (event) =>{
+    if(event.key==='r'){
+        console.log("rock");
+        compmove('rock');
+    }
+    if(event.key==='p'){
+        console.log('paper');
+        compmove('paper');
+    }
+    if(event.key==='s'){
+        console.log('scissors');
+        compmove('scissors');
+    }
+});
+
 displayboard();
