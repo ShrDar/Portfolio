@@ -1,5 +1,5 @@
 const applicances=[{
-    name: 'Fridge',
+    name: 'Refrigerator',
     url: 'https://www.daraz.com.np/refrigerators/?city-electronics&from=wangpu',
     img: 'Pictures/fridge.png'
 }, {
@@ -43,3 +43,13 @@ applicances.forEach((appliance) => {
 });
 document.querySelector('.js-items').innerHTML = homeHtml;
 
+
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.nav-bar');
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    nav.classList.toggle('active');
+});
+
+hamburger.classList.toggle('active');
+    nav.classList.toggle('active');
