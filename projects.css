@@ -44,6 +44,7 @@
     padding-right: 10px;
     border-radius: 20px;
     transition: 0.2s;
+    cursor: pointer;
 }
 .project button:hover{
     background: #C8CDE1;

@@ -56,7 +56,8 @@ body{
 }
 .rock{
     height:100px;
-    transition: 0.2s
+    transition: 0.2s;
+    cursor: pointer;
 }
 .rock:hover{
     filter: invert(1);
@@ -65,6 +66,7 @@ body{
 .paper{
     height: 100px;
     transition: 0.2s;
+    cursor: pointer;
 }
 .paper:hover{
     filter: invert(1);
@@ -73,6 +75,7 @@ body{
 .scissors{
     height: 100px;
     transition: 0.2s;
+    cursor: pointer;
 }
 .scissors:hover{
     filter: invert(1);
@@ -88,6 +91,7 @@ body{
     border-radius: 30px;
     transition: 0.2s;
     margin: 20px;
+    cursor: pointer;
 }
 .rbtn:hover{
     background: #000;
@@ -144,6 +148,7 @@ body{
     align-items: center;
     border-radius: 30px;
     transition: 0.2s;
+    cursor: pointer;
 }
 .abtn:hover{
     background: #000;

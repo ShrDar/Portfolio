@@ -384,7 +384,7 @@ body{
     }
     .nav-bar.active{
         right: 0;
-        background: #ffffff;
+        background: transparent;
         transition: 0.3s;
     }
 }
