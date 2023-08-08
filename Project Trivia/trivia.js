@@ -72,6 +72,7 @@ const mcq = (url) => {
         mcqHtml += html;
     });
     document.querySelector('.mcq').innerHTML = mcqHtml;
+    
 
     const content = document.querySelectorAll('.content');
     content.forEach((con) => {

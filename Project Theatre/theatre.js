@@ -43,8 +43,13 @@ let ticketsBought = [];
 
 let ticketsReserved = [];
 
-
-
+const designTop = document.getElementById('design-top');
+const designBottom = document.getElementById('design-bottom');
+const curved1 = document.getElementById("curved1");
+const curved2 = document.getElementById("curved2");
+const curved3 = document.getElementById("curved3");
+const curved4 = document.getElementById("curved4");
+const curved5 = document.getElementById("curved5");
 
 //Now-showing Section:-------
 
@@ -188,6 +193,15 @@ document.querySelector('.favourites').addEventListener('click', () => {
     document.querySelector('.heading').classList.toggle('nodisplay');
     favHeading.classList.toggle('favDisplayflex');
 
+    curved1.style.background = '#f58895';
+    curved1.style.borderRadius = '50% 50% 16% 84% / 36% 56% 44% 64%  '
+    curved2.style.background = '#c0c3c2';
+    curved2.style.borderRadius = '70% / 50%';
+    curved3.style.borderRadius = '50% / 50%'
+    curved3.style.background = '#f5f588';
+    curved4.style.background = '#88f3f5';
+    curved5.style.background = '#2BC48A';
+
 });
 
 const favHeading = document.querySelector('.favheading');
@@ -318,6 +332,11 @@ ticketButton.forEach((buttons) => {
         seatselection('bought');
         seatselection('reserved');
         selectedSeats = [];
+        curved1.style.background = '#88f3f5';
+        curved2.style.background = '#2BC48A';
+        curved3.style.background = '#f5f588';
+        curved4.style.background = '#88f3f5';
+        curved5.style.background = '#2BC48A';
         nowShowing.classList.toggle('nodisplay');
         buyTickets.classList.toggle('ticketsdisplay');
         heading.classList.toggle('nodisplay');

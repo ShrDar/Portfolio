@@ -28,10 +28,69 @@
     }
 }
 body{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.design-top {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    filter: opacity(0.5);
+    transition: 0.4s;
+}
+.curved1 {
+    height: 200px;
+    width: 140px;
+    background: #2BC48A;
+    border-radius: 88% 12% 49% 51% / 41% 62% 38% 59%  ; 
+    margin: 20px;
+    transition: 1s;
+}
+.curved2 {
+    height: 200px;
+    width: 140px;
+    background: #f5f588;
+    border-radius: 69% 31% 80% 20% / 46% 62% 38% 54% ;
+    transition: 1s;
+}
+.curved3 {
+    position: sticky;
+    margin-top: 10rem;
+    height: 300px;
+    width: 300px;
+    background: #f58895;
+    border-radius: 49% 51% 80% 20% / 62% 46% 54% 38% ;
+    transition: 1s;
+}
+
+.design-bottom {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    filter: opacity(0.5);
+}
+.curved4 {
+    height: 150px;
+    width: 140px;
+    background: #c0c3c2;
+    border-radius: 47% 53% 47% 53% / 47% 46% 54% 53% ;
+    margin: 20px;
+    transition: 1s;
+}
+.curved5 {
+    height: 150px;
+    width: 140px;
+    background: #88f3f5;
+    border-radius: 88% 12% 46% 54% / 63% 25% 75% 37% ;
+    margin: 20px;
+    transition: 1s;
 }
 .heading{
     position: relative;
