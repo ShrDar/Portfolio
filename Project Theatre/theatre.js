@@ -102,6 +102,9 @@ const comingHead = document.querySelector('.comingHeading');
 const navcomingSoon = document.querySelector('.navcomingSoon');
 navcomingSoon.addEventListener('click', () => {
     favStatus = 'comingSoon';
+    curved1.style.height = '100rem';
+    curved1.style.width = '100rem';
+    curved4.style.transform = 'scale(0)'
     cominSoon.classList.toggle('comingDisplay');
     nowShowing.classList.toggle('nodisplay');
     document.querySelector('.heading').classList.toggle('nodisplay');
@@ -111,6 +114,9 @@ navcomingSoon.addEventListener('click', () => {
 const returnn = document.querySelector('.chead1');
 returnn.addEventListener('click', () => {
     favStatus = 'nowShowing';
+    curved1.style.height = '200px';
+    curved1.style.width = '140px';
+    curved4.style.transform = 'scale(1)'
     cominSoon.classList.toggle('comingDisplay');
     nowShowing.classList.toggle('nodisplay');
     document.querySelector('.heading').classList.toggle('nodisplay');
@@ -193,14 +199,14 @@ document.querySelector('.favourites').addEventListener('click', () => {
     document.querySelector('.heading').classList.toggle('nodisplay');
     favHeading.classList.toggle('favDisplayflex');
 
-    curved1.style.background = '#f58895';
+    curved1.style.background = '#F3BCC2';
     curved1.style.borderRadius = '50% 50% 16% 84% / 36% 56% 44% 64%  '
-    curved2.style.background = '#c0c3c2';
+    curved2.style.background = '#D4D6D6';
     curved2.style.borderRadius = '70% / 50%';
     curved3.style.borderRadius = '50% / 50%'
-    curved3.style.background = '#f5f588';
-    curved4.style.background = '#88f3f5';
-    curved5.style.background = '#2BC48A';
+    curved3.style.background = '#FFFFA2';
+    curved4.style.background = '#ADF3F5';
+    curved5.style.background = '#8EDCBE';
 
 });
 
@@ -324,19 +330,31 @@ function clearSeats(){
 let currentMovie = '';
 const buyTickets = document.querySelector('.buyTickets');
 const ticketButton = document.querySelectorAll('.ticket');
-ticketButton.forEach((buttons) => {
-    buttons.addEventListener('click', () => {    
+ticketButton.forEach((buttons, index) => {
+
+    buttons.addEventListener('click', () => {  
+        console.log(index)  
         seatselectorId = buttons.dataset.movieId; 
         currentMovie = seatselectorId;
         clearSeats();
         seatselection('bought');
         seatselection('reserved');
         selectedSeats = [];
-        curved1.style.background = '#88f3f5';
-        curved2.style.background = '#2BC48A';
-        curved3.style.background = '#f5f588';
-        curved4.style.background = '#88f3f5';
-        curved5.style.background = '#2BC48A';
+        if(index === 1 || index === 2) {
+            curved3.style.height = '100rem';
+            curved3.style.width = '100rem';
+        }
+        else if(index === 0){
+            curved4.style.height = '100rem';
+            curved4.style.width = '110rem';
+            curved1.style.transform = 'scale(0)'
+        }
+        else {
+            curved5.style.height = '100rem';
+            curved5.style.width = '100rem';
+            curved1.style.transform = 'scale(0)'
+        }
+        
         nowShowing.classList.toggle('nodisplay');
         buyTickets.classList.toggle('ticketsdisplay');
         heading.classList.toggle('nodisplay');
@@ -352,6 +370,13 @@ cross.addEventListener('click', () => {
     buyTickets.classList.toggle('ticketsdisplay');
     nowShowing.classList.toggle('nodisplay');
     heading.classList.toggle('nodisplay');
+    curved1.style.transform = 'scale(1)'
+    curved3.style.height = '300px';
+    curved3.style.width = '300px';
+    curved4.style.height = '150px';
+    curved4.style.width = '140px';
+    curved5.style.height = '150px';
+    curved5.style.width = '140px'
 });
 
 function successPopcorn(){
@@ -407,6 +432,9 @@ document.querySelector('.sucessfulcross').addEventListener('click', () => {
 const exit = document.querySelector('.divexit');
 const MyTickets = document.querySelector('.reservation');
 MyTickets.addEventListener('click', () => {
+    curved2.style.height = '100rem';
+    curved2.style.width = '100rem';
+    curved5.style.transform = 'scale(0)'
     document.querySelector('.SoldorReserved').classList.add('Showdisplay');
     document.querySelector('.heading').classList.toggle('nodisplay');
     exit.classList.toggle('Showdisplay');
@@ -429,6 +457,10 @@ function navTicketsSection(status){
     }
     if(tickets.length === 0){
         alert('No Tickets Found');
+        curved2.style.height = '200px';
+        curved2.style.width = '140px';
+        curved5.style.transform = 'scale(1)'
+
         nowShowing.classList.toggle('nodisplay');
         exit.classList.toggle('Showdisplay');
         document.querySelector('.heading').classList.toggle('nodisplay');
@@ -484,6 +516,10 @@ exit.addEventListener('click', () => {
     document.querySelector('.heading').classList.toggle('nodisplay');
     document.querySelector('.myTicket').classList.remove('Showdisplay2');
     exit.classList.toggle('Showdisplay');
+    curved2.style.height = '200px';
+    curved2.style.width = '140px';
+    curved5.style.transform = 'scale(1)'
+
     nowShowing.classList.toggle('nodisplay');
     ticketsHtml = '';
 });

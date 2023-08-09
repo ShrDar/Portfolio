@@ -40,13 +40,13 @@ body{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    filter: opacity(0.5);
+    
     transition: 0.4s;
 }
 .curved1 {
     height: 200px;
     width: 140px;
-    background: #2BC48A;
+    background: #8edcbe;
     border-radius: 88% 12% 49% 51% / 41% 62% 38% 59%  ; 
     margin: 20px;
     transition: 1s;
@@ -54,7 +54,7 @@ body{
 .curved2 {
     height: 200px;
     width: 140px;
-    background: #f5f588;
+    background: #ffffa2;
     border-radius: 69% 31% 80% 20% / 46% 62% 38% 54% ;
     transition: 1s;
 }
@@ -63,7 +63,7 @@ body{
     margin-top: 10rem;
     height: 300px;
     width: 300px;
-    background: #f58895;
+    background: #f3bcc2;
     border-radius: 49% 51% 80% 20% / 62% 46% 54% 38% ;
     transition: 1s;
 }
@@ -74,12 +74,11 @@ body{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    filter: opacity(0.5);
 }
 .curved4 {
     height: 150px;
     width: 140px;
-    background: #c0c3c2;
+    background: #d4d6d6;
     border-radius: 47% 53% 47% 53% / 47% 46% 54% 53% ;
     margin: 20px;
     transition: 1s;
@@ -87,7 +86,7 @@ body{
 .curved5 {
     height: 150px;
     width: 140px;
-    background: #88f3f5;
+    background: #adf3f5;
     border-radius: 88% 12% 46% 54% / 63% 25% 75% 37% ;
     margin: 20px;
     transition: 1s;
@@ -590,7 +589,7 @@ body{
 
 .myTicket{
     display: none;
-    border: 1px solid #ffffff;
+    
     grid-template-columns: repeat(3, 1fr);
     width: fit-content;
     z-index: 1;
@@ -682,7 +681,7 @@ body{
     padding: 20px;
     margin-bottom: 15px;
     z-index: 20;
-    background: #fff;
+    background: inherit;
 }
 .return{
     height: 30px;
