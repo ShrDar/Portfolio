@@ -213,7 +213,7 @@ body{
     align-items: center;
     gap: 15px;
     padding: 5px;
-    
+    width: 100%;
 }
 .ticket_heart button{
     border: none;
@@ -278,7 +278,7 @@ body{
 .favheading{
     top: 0;
     position: sticky;
-    background: #fff;
+    background: inherit;
     display: none;
     flex-direction: row;
     width: fit-content;
